@@ -12,3 +12,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+/* code for the slider to take the margin from the bottom of the screen. */
+.carousel.carousel-slider {
+  
+  margin-bottom: 19px !important;
+}

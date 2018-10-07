@@ -1,26 +1,25 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import DenseAppBar from "./components/menu";
+import  Slider  from "./components/slider";
+import MediaCard from "./components/services";
+import Grid from '@material-ui/core/Grid';
+import SingleLineGridList from "./components/listservice";
+import PaperSheet from "./components/serviceInfo";
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Grid container  className="App">
+      <DenseAppBar />
+      <Slider className="sliderClass" />
+      <PaperSheet title="Lawyer Request" desc="This will be helping you for the getting your law problem solved." />
+      <SingleLineGridList id="fun" container/>
+      <PaperSheet title="Lawyer Request" desc="This will be helping you for the getting your law problem solved." />
+      <SingleLineGridList id="fun" container/>
+ </Grid>
     );
   }
 }
